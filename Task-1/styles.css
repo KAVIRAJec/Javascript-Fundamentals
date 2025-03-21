@@ -1,0 +1,122 @@
+/* Overall styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: bisque;
+    color:black;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: gray;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Main Styles */
+main {
+    min-height: 70vh;
+}
+
+main h1 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+    font-size: large;
+    margin: 5px;
+}
+
+/* Todo styles */
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: rgb(180, 161, 126);
+    max-width: 700px;
+    box-shadow: 0 1px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-header {
+    padding: 10px;
+}
+
+.todo-header input {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: large;
+}
+
+.todo-header button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(107, 93, 1);
+    color: white;
+    font-size: large;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-header button:hover {
+    background-color: rgba(145, 99, 26, 0.8);
+}
+
+#todo-list {
+    display: block;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #d7ceb1;
+}
+
+.todo-item.done {
+    background-color: rgba(166, 239, 55, 0.766);
+}
+
+.todo-item button {
+    background-color: #b68f10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-item button:hover {
+    background-color: #c5b793;
+  }
+
+/* Footer styles */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 0 15px 0;
+}
