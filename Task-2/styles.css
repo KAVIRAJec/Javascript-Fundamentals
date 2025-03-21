@@ -1,0 +1,103 @@
+/* Overall styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: bisque;
+    color:black;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: gray;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Main Styles */
+main {
+    min-height: 70vh;
+}
+
+main h1 {
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+    font-size: large;
+    margin: 5px;
+}
+
+/* Calculator */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: rgb(180, 161, 126);
+    max-width: 700px;
+    box-shadow: 0 1px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator input {
+    width: 55%;
+    padding: 18px 20px 15px 0px;
+    margin: 5px auto;
+    border-radius: 12px;
+    border: none;
+    text-align: end;
+    font-size: large;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.calculator button {
+    padding: 15px 20px;
+    margin:10px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(29, 151, 86);
+    color: white;
+    font-size: large;
+    transition: all 0.3s ease-in-out;
+}
+.calculator .buttons button {
+    padding: 15px 20px;
+    margin:5px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(29, 151, 86);
+    color: white;
+    font-size: large;
+    transition: all 0.3s ease-in-out;
+}
+
+.calculator .buttons button:hover, .calculator button:hover {
+    background-color: rgb(66, 194, 128);
+    color: white;
+    transform: scale(1.2);
+}
+/* Footer styles */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 0 15px 0;
+}
