@@ -12,7 +12,7 @@ function addTask() {
         alert('Please enter a task')
         return
     }
-    tasks.push({ text: task, done: false })
+    tasks.push({ text: task })
     taskInput.value = ""
     saveTasks()
     renderTasks()
@@ -35,23 +35,17 @@ function renderTasks() {
     todoList.innerHTML = ""
     tasks.forEach((task, index) => {
         const taskItem = document.createElement('li')
-        taskItem.className = `todo-item ${task.done ? 'done' : ''}`
+        taskItem.className = `todo-item`
         taskItem.innerHTML = `
-        <span>${task.text}</span>
+        <span onClick="deleteTask(${index})">${task.text}</span>
         <div>
-            <button onClick="toggleTask(${index})">✔️</button>
-            <button onClick="deleteTask(${index})">❌</button>
+            <input type='checkbox' id='todo-check' style="display: none;" onClick="deleteTask(${index})" />
+            <label for='todo-check' class='todo-check'></label>
         </div>`
         todoList.appendChild(taskItem)
     });
 }
 
-// Toggle task
-function toggleTask(index) {
-    tasks[index].done = !tasks[index].done
-    saveTasks()
-    renderTasks()
-}
 // Event listener for add button
 addButton.addEventListener("click", addTask);
 taskInput.addEventListener("keypress", (e)=> {
