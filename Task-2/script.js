@@ -1,6 +1,6 @@
 function append(value) {
     const inputField = document.getElementById("input")
-    if(inputField.value === "0" || inputField.value === "Error") {
+    if(inputField.value === "" || inputField.value === "Error") {
         inputField.value = value
     }else {
         inputField.value += value
@@ -9,7 +9,7 @@ function append(value) {
 
 function clearInput() {
     const inputField = document.getElementById("input")
-    inputField.value = "0"
+    inputField.value = ""
 }
 
 function calculate() {
