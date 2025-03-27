@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image Gallery Lightbox</title>
+  </head>
+  <body>
+    <header>
+      <h1>Image Gallery Lightbox</h1>
+    </header>
+    <main>
+      <div class="gallery">
+        <img src="https://img.freepik.com/free-vector/watercolor-holi-festival_23-2148829339.jpg?ga=GA1.1.1283928139.1720152730" alt="Image1" class="thumbnail" />
+        <img src="https://img.freepik.com/free-photo/view-cool-3d-man-posing_23-2150709946.jpg?ga=GA1.1.1283928139.1720152730&semt=ais_hybrid" alt="Image2" class="thumbnail" />
+        <img src="https://img.freepik.com/free-photo/elegant-businesswoman-walking-city_23-2147989690.jpg?ga=GA1.1.1283928139.1720152730&semt=ais_hybrid" alt="Image3" class="thumbnail" />
+        <img src="https://img.freepik.com/premium-photo/minimal-batman-silhouette-wallpaper-with-red-background_899449-543502.jpg?ga=GA1.1.1283928139.1720152730&semt=ais_hybrid" alt="Image4" class="thumbnail" />
+      </div>
+
+      <div id="lightbox" class="lightbox">
+        <span class="close" id="close">&times;</span>
+        <img alt="Prev Image" id="prev-image" />
+        <img alt="Full Image" id="lightbox-image" />
+        <img alt="Next Image" id="next-image" />
+        <button id="prev">❮</button>
+        <button id="next">❯</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 My Static Webpage. All rights reserved.</p>
+      <script src="script.js"></script>
+    </footer>
+  </body>
+</html>
