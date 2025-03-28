@@ -1,4 +1,5 @@
 const input = document.getElementById("search");
+const API_KEY = "YOUR_API_KEY";
 input.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
         searchWeather(input.value);
@@ -7,7 +8,6 @@ input.addEventListener("keypress", (event) => {
 });
 
 async function searchWeather(city) {
-    const API_KEY = "6fb09da98a549a7ad9cdb07b23346e0d";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
 
     try {
@@ -26,7 +26,6 @@ async function searchWeather(city) {
 }
 
 async function searchHourly(city) {
-    const API_KEY = "6fb09da98a549a7ad9cdb07b23346e0d";
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`;
 
     try {
