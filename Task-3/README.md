@@ -24,9 +24,9 @@ This project is an **Image Gallery with Lightbox** functionality built using HTM
 ## File Structure
 ```
 Task-2/
-├── index.html   # HTML file for the calculator
-├── styles.css   # CSS file for styling the calculator
-└── script.js    # JavaScript file for calculator functionality
+├── index.html   # HTML file
+├── styles.css   # CSS file
+└── script.js    # JavaScript
 ```
 
 ---

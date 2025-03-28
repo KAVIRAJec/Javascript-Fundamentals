@@ -24,9 +24,9 @@ The **Dynamic Quiz Application** is a web-based quiz platform that dynamically f
 ## File Structure
 ```
 Task-5/
-├── index.html   # HTML file for the calculator
-├── styles.css   # CSS file for styling the calculator
-└── script.js    # JavaScript file for calculator functionality
+├── index.html   # HTML file
+├── styles.css   # CSS file
+└── script.js    # JavaScript file
 └── quiz.json   # JSON data containing the quiz details
 ```
 ---

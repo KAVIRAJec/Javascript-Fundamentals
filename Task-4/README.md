@@ -25,9 +25,9 @@ This project is a **Weather Dashboard** that provides real-time weather informat
 ## File Structure
 ```
 Task-4/
-├── index.html   # HTML file for the calculator
-├── styles.css   # CSS file for styling the calculator
-└── script.js    # JavaScript file for calculator functionality
+├── index.html   # HTML file
+├── styles.css   # CSS file
+└── script.js    # JavaScript file
 ```
 ---
 

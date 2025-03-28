@@ -20,9 +20,9 @@ This project implements a **Drag and Drop Sortable List** using the HTML5 Drag a
 ## File Structure
 ```
 Task-6/
-├── index.html   # HTML file for the calculator
-├── styles.css   # CSS file for styling the calculator
-└── script.js    # JavaScript file for calculator functionality
+├── index.html   # HTML file
+├── styles.css   # CSS file
+└── script.js    # JavaScript file
 ```
 
 ## Workflow
