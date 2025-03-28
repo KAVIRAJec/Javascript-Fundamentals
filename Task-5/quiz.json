@@ -1,0 +1,152 @@
+[
+    {
+        "question": "What does HTML stand for?",
+        "options": [
+            "HyperText Markup Language",
+            "HyperTransfer Markup Language",
+            "HyperText Modeling Language",
+            "Hyper Tool Markup Language"
+        ],
+        "answer": "HyperText Markup Language"
+    },
+    {
+        "question": "Which tag is used to define a hyperlink in HTML?",
+        "options": [
+            "<link>",
+            "<a>",
+            "<hyperlink>",
+            "<url>"
+        ],
+        "answer": "<a>"
+    },
+    {
+        "question": "What is the correct HTML tag for inserting an image?",
+        "options": [
+            "<img src='image.jpg' alt='image'>",
+            "<image src='image.jpg' alt='image'>",
+            "<img href='image.jpg' alt='image'>",
+            "<img link='image.jpg' alt='image'>"
+        ],
+        "answer": "<img src='image.jpg' alt='image'>"
+    },
+    {
+        "question": "Which HTML element is used to define navigation links?",
+        "options": [
+            "<nav>",
+            "<navigation>",
+            "<links>",
+            "<menu>"
+        ],
+        "answer": "<nav>"
+    },
+    {
+        "question": "How can you make a numbered list in HTML?",
+        "options": [
+            "<list>",
+            "<ul>",
+            "<ol>",
+            "<nl>"
+        ],
+        "answer": "<ol>"
+    },
+    {
+        "question": "What does CSS stand for?",
+        "options": [
+            "Color Styling Sheets",
+            "Cascading Style Sheets",
+            "Computer Style Sheets",
+            "Creative Style Sheets"
+        ],
+        "answer": "Cascading Style Sheets"
+    },
+    {
+        "question": "Which property is used to change the background color in CSS?",
+        "options": [
+            "background-color",
+            "bgcolor",
+            "color",
+            "background"
+        ],
+        "answer": "background-color"
+    },
+    {
+        "question": "How do you select an element with the class name 'example' in CSS?",
+        "options": [
+            "#example",
+            ".example",
+            "example",
+            "*example*"
+        ],
+        "answer": ".example"
+    },
+    {
+        "question": "How do you make a list item horizontal in CSS?",
+        "options": [
+            "list-style: inline;",
+            "display: inline;",
+            "display: block;",
+            "list-style: block;"
+        ],
+        "answer": "display: inline;"
+    },
+    {
+        "question": "What is the default value of the 'position' property in CSS?",
+        "options": [
+            "relative",
+            "absolute",
+            "static",
+            "fixed"
+        ],
+        "answer": "static"
+    },
+    {
+        "question": "What is the correct syntax to print 'Hello World' in JavaScript?",
+        "options": [
+            "console.print('Hello World');",
+            "print('Hello World');",
+            "console.log('Hello World');",
+            "log('Hello World');"
+        ],
+        "answer": "console.log('Hello World');"
+    },
+    {
+        "question": "How do you create a function in JavaScript?",
+        "options": [
+            "function = myFunction() {}",
+            "function myFunction() {}",
+            "myFunction() = function { }",
+            "function: myFunction() {}"
+        ],
+        "answer": "function myFunction() {}"
+    },
+    {
+        "question": "What does the 'typeof' operator do in JavaScript?",
+        "options": [
+            "Returns the type of an object",
+            "Returns the type of a variable or expression",
+            "Returns the value of a variable",
+            "None of the above"
+        ],
+        "answer": "Returns the type of a variable or expression"
+    },
+    {
+        "question": "Which of the following is used to declare a variable in JavaScript?",
+        "options": [
+            "var",
+            "let",
+            "const",
+            "All of the above"
+        ],
+        "answer": "All of the above"
+    },
+    {
+        "question": "What will the following JavaScript code output?\n\nlet x = 5;\nconsole.log(x++);",
+        "options": [
+            "5",
+            "6",
+            "Error",
+            "Undefined"
+        ],
+        "answer": "5"
+    }
+]

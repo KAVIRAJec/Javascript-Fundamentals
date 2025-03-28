@@ -46,6 +46,20 @@ function updateWeather(data) {
     document.querySelector(".weather-info-item-text h1").textContent = data.name;
     document.querySelector(".weather-info-item-text p").textContent = data.sys.country;
     document.getElementById("temp").textContent = `${data.main.temp}°C`;
+
+    const temp = data.main.temp;
+    let bgColor;
+    if (temp <= 0) {
+        bgColor = "#00aaff";
+    } else if (temp > 0 && temp <= 15) {
+        bgColor = "#87ceeb";
+    } else if (temp > 15 && temp <= 30) {
+        bgColor = "#ffd700";
+    } else {
+        bgColor = "#e36a3d";
+    }
+
+    document.querySelector("body").style.backgroundColor = bgColor;
     document.querySelector(".weather-info-item img").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 }
 
