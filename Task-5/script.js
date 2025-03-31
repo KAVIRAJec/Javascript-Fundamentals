@@ -15,6 +15,7 @@ async function getQuizData() {
 
 let currentQuestion = 0;
 let score = 0;
+let Status = 0;
 
 async function updateData() {
     const quizData = await getQuizData();
@@ -26,6 +27,7 @@ async function updateData() {
 }
 
 async function verifyAnswerAndUpdate(answer) {
+    Status = 1;
     const quizData = await getQuizData();
     const correctAnswer = quizData[currentQuestion].answer;
 
@@ -39,6 +41,7 @@ async function verifyAnswerAndUpdate(answer) {
     if (currentQuestion + 1 < quizData.length) {
         currentQuestion++;
         updateData();
+        Status = 0;
     } else {
         questionNo.textContent = `Quiz Completed`;
         question.textContent = `Your Score is ${score}/${quizData.length}`;
@@ -56,6 +59,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 nextBtn.addEventListener("click", () => {
 
     if(currentQuestion + 1 < 15){
+        if(Status == 0){
+            alert("Please select an option");
+            return;
+        }
         currentQuestion++;
         updateData();
     }

@@ -1,5 +1,4 @@
 const chatContainer = document.querySelector('.chat-main');
-const chatItem = document.querySelector('.message');
 
 const input = document.querySelector('.input-text');
 const sendBtn = document.querySelector('.send')
@@ -12,7 +11,8 @@ function renderMessages() {
             const messageElement = document.createElement('div')
             messageElement.classList.add('message', message.sender === 'user' ? 'user' : 'auto')
             messageElement.innerHTML = 
-                `<div class='message-text'>
+                `<img src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?ga=GA1.1.1283928139.1720152730&semt=ais_hybrid" alt="user">
+                <div class='message-text'>
                     <p>${message.text}</p>
                 </div>`
             chatContainer.prepend(messageElement)
@@ -65,6 +65,7 @@ input.addEventListener('keydown', (e) => {
         const message = input.value.trim()
     if (message) {
         sendMessage(message)
+        setTimeout(autoReply, 2000)
         input.value = ''
     } else {
         throw new Error('Please enter a message');

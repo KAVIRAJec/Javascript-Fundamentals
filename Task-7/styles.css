@@ -123,14 +123,14 @@ body {
     scroll-behavior: smooth;
 }
 
-.chat main::-webkirollbar {
+.chat main::-webkit-scrollbar {
     width: 0px;
 }
 
 .chat main .message {
     display: flex;
     justify-content: start;
-    align-items: end;
+    align-items: center;
     margin: 0;
     padding: 10px 20px;
     gap: 20px;
