@@ -11,14 +11,16 @@ async function getPosts() {
         const data = await response.json()
         return data
     } catch (error) {
-        return new Error(error)
+        console.error('Error fetching posts:', error)
+        throw error
     }
 }
 
 async function showPosts() {
-    const posts = await getPosts()
+    try {
+        const posts = await getPosts()
 
-    posts.forEach(post => {
+        posts.forEach(post => {
         const postDiv = document.createElement('div')
         postDiv.classList.add('post')
         postDiv.innerHTML = `
@@ -29,22 +31,23 @@ async function showPosts() {
             </div>`
         postContainer.appendChild(postDiv)
     })
+    } catch (error) {
+        console.error('Error showing posts:', error)
+    }
+    
 }
 
-async function showLoading() {
+function showLoading() {
     if (isLoading) return;
     isLoading = true;
 
     loading.classList.add('show');
 
-    setTimeout(() => {
+    setTimeout(async () => {
+        page++;
+        await showPosts()
         loading.classList.remove('show');
-        setTimeout(() => {
-            page++;
-            showPosts().then(() => {
-                isLoading = false;
-            });
-        }, 300);
+        isLoading = false;
     }, 1000);
 }
 
@@ -55,6 +58,6 @@ window.addEventListener('scroll', () => {
         if (scrollTop + clientHeight >= scrollHeight - 5) {
             showLoading();
         }
-    }, 200)
+    })
 
 document.addEventListener('DOMContentLoaded', showPosts)
