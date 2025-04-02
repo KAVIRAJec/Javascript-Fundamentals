@@ -236,3 +236,71 @@ greet(); // "Hello, Guest!"
 greet("Alice"); // "Hello, Alice!"
 ```
 
+## What are HTTP Methods?
+
+HTTP methods are standardized request types used in web development to communicate between clients and servers. Each method specifies the desired action to be performed on a resource.
+
+### Common HTTP Methods:
+
+1. **GET**:
+    - **Purpose**: Retrieve data from the server.
+    - **Usage**: Used for fetching resources without modifying them.
+    - **Example**:
+      ```javascript
+      fetch('https://api.example.com/data')
+         .then(response => response.json())
+         .then(data => console.log(data));
+      ```
+
+2. **POST**:
+    - **Purpose**: Send data to the server to create a new resource.
+    - **Usage**: Commonly used for submitting forms or uploading data.
+    - **Example**:
+      ```javascript
+      fetch('https://api.example.com/data', {
+         method: 'POST',
+         headers: { 'Content-Type': 'application/json' },
+         body: JSON.stringify({ name: 'John', age: 30 })
+      })
+         .then(response => response.json())
+         .then(data => console.log(data));
+      ```
+
+3. **PUT**:
+    - **Purpose**: Update an existing resource or create it if it doesn't exist.
+    - **Usage**: Used for full updates of a resource.
+    - **Example**:
+      ```javascript
+      fetch('https://api.example.com/data/1', {
+         method: 'PUT',
+         headers: { 'Content-Type': 'application/json' },
+         body: JSON.stringify({ name: 'John', age: 31 })
+      })
+         .then(response => response.json())
+         .then(data => console.log(data));
+      ```
+
+4. **PATCH**:
+    - **Purpose**: Partially update an existing resource.
+    - **Usage**: Used for making specific changes to a resource.
+    - **Example**:
+      ```javascript
+      fetch('https://api.example.com/data/1', {
+         method: 'PATCH',
+         headers: { 'Content-Type': 'application/json' },
+         body: JSON.stringify({ age: 32 })
+      })
+         .then(response => response.json())
+         .then(data => console.log(data));
+      ```
+
+5. **DELETE**:
+    - **Purpose**: Remove a resource from the server.
+    - **Usage**: Used for deleting resources.
+    - **Example**:
+      ```javascript
+      fetch('https://api.example.com/data/1', {
+         method: 'DELETE'
+      })
+         .then(response => console.log('Resource deleted'));
+      ```
